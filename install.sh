@@ -1,7 +1,6 @@
 #!/bin/ash 
 
 apk update
-apk add wget git grep
 apk add gcc musl-dev 
 
 go_version="$(wget -qO- https://golang.org/dl/ | grep -oP 'go([0-9\.]+linux-amd64.tar.gz)' | head -n 1)"
