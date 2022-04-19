@@ -14,18 +14,18 @@ tar xvfz $go_version
 mv go /usr/local/go
 rm $go_version
 
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/goProjects
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+#cd /tmp
+#git clone https://github.com/gophish/gophish.git
+#cd /tmp/gophish
 
-cd /tmp
-git clone https://github.com/gophish/gophish.git
-cd /tmp/gophish
-sed -i 's/f.SetAttr("action", "")/\/\/f.SetAttr("action", "")/' models/page.go
-#### FROM golang:1.16 AS build-golang
-#sed -i 's/golang:1.11/golang:1.16/' Dockerfile
-# /usr/local/go/bin/go
-go build
+# sed -i 's/f.SetAttr("action", "")/\/\/f.SetAttr("action", "")/' models/page.go
+# /usr/local/go/bin/go build
+
+#export GOROOT=/usr/local/go
+#export GOPATH=$HOME/goProjects
+#export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+#go build
 
 #docker build -t flabcz/gophish .
 #rm -rf /tmp/gophish
