@@ -27,5 +27,5 @@ sed -i 's/f.SetAttr("action", "")/\/\/f.SetAttr("action", "")/' models/page.go
 # /usr/local/go/bin/go
 go build
 
-docker build -t flabcz/gophish .
+#docker build -t flabcz/gophish .
 #rm -rf /tmp/gophish
